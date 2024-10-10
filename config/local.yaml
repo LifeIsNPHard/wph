@@ -1,0 +1,36 @@
+site_data:
+  https: false
+  home_url: 'http://localhost:8080/'
+  wp_url: 'http://localhost:8080/wp'
+  auto_update: 'minor'
+  disable_cron: true
+
+database:
+  name: 'local_db_name'
+  user: 'local_db_user'
+  password: 'local_db_password'
+  host: 'localhost'
+  charset: 'utf8'
+  collate: ''
+  table_prefix: 'wp_'
+
+cache:
+  enabled: false
+
+debug:
+  wp_debug: true
+  wp_debug_log: true
+  wp_debug_display: true
+  script_debug: true
+  display_errors: true
+
+# Generate your keys here: https://roots.io/salts.html
+keys:
+  auth_key: "i0l:O2;eME8]*$TpU3q=?V/Qwz%V},oIaaVGu(Wr.b8a1=G}W#>CfK@z$!pVvpIR"
+  secure_auth_key: "bdqapu:^5X%K}BBxiQLm0ixo+iM-Ogf&2J(PzC=.HxIr(x5@mLR&^ktj9yCoSXX_"
+  logged_in_key: "LZO|&9&e=@@8mB.]f[?Sj&7d6vO_(8)9Wug=:TZGP.+]$]W)&69NVv]S:0QYf<C1"
+  nonce_key: "M6nsvb,FP6*hO#I[x^|v1tI+,#*e|>NB06+CJ_bG&>tVU*gQ$%&_4Lkq9?.H%d!i"
+  auth_salt: "4,N]UbTXCDKZwFZ|&Qfejb>}Z&}an0<`ja;Ve7jnXeHEjcmqr_NP#aKruxJ!T1CJ"
+  secure_auth_salt: "s(4X|;ECXkxben>No^LD,ZE2YVx*JxL!}&xXA;hw!Y`5IXc)O)9oT4W%wsT{^t1{"
+  logged_in_salt: "1Ej9;3N)a1-tkm,*``K1yU|E2Jldhe4X3tB)#;s9WuoTbjn;,a1!QpiOV>Ye}-1."
+  nonce_salt: "RHw91?T.A)NX3I[l!fC%FbT%Mr.jEe3#AD|]1wx^NiH)&sOG>c!()uqaL<.+GfqJ"

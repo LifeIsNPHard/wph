@@ -1,0 +1,77 @@
+{
+  "name": "purplewp/wph",
+  "description": "WPH - WordPress Headless Skeleton",
+  "license": "MIT",
+  "type": "project",
+  "keywords": [
+    "purplewp",
+    "wordpress",
+    "headless",
+    "skeleton",
+    "boilerplate",
+    "wph"
+  ],
+  "require": {
+    "php": "^8.2",
+    "composer/installers": "^2.3",
+    "koodimonni-language/core-pt_br": "*",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0.4",
+    "roots/wordpress": "^6.6.1",
+    "roots/wp-password-bcrypt": "^1.1",
+    "symfony/http-foundation": "^7.1",
+    "symfony/yaml": "^7.1",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.1"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io",
+      "only": [
+        "koodimonni-language/*"
+      ]
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true,
+      "koodimonni/composer-dropin-installer": true
+    },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "installer-paths": {
+      "public/content/mu-plugins/{$name}": [
+        "type:wordpress-muplugin"
+      ],
+      "public/content/plugins/{$name}": [
+        "type:wordpress-plugin"
+      ],
+      "public/content/themes/{$name}": [
+        "type:wordpress-theme"
+      ]
+    },
+    "dropin-paths": {
+      "public/content/languages/": [
+        "vendor:koodimonni-language"
+      ]
+    },
+    "wordpress-install-dir": "public/wp"
+  }
+}

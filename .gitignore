@@ -1,0 +1,15 @@
+.editorconfig
+.env
+.idea/*
+/config/production.yaml
+/public/content/debug.log
+/public/content/languages
+/public/content/mu-plugins/*
+!/public/content/mu-plugins/mu-plugins.php
+/public/content/plugins/*
+!/public/content/plugins/index.php
+/public/content/themes/*/assets
+/public/content/upgrade
+/public/content/assets
+/public/wp
+/vendor
