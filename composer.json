@@ -1,7 +1,7 @@
 {
-  "name": "purplewp/wph",
-  "description": "WPH - WordPress Headless Skeleton",
-  "license": "MIT",
+  "name": "purplecollective/wphm",
+  "description": "WPHM - WordPress Headless Manager",
+  "license": "GPL-3.0-only",
   "type": "project",
   "keywords": [
     "purplewp",
@@ -9,19 +9,17 @@
     "headless",
     "skeleton",
     "boilerplate",
-    "wph"
+    "wphm"
   ],
   "require": {
     "php": "^8.2",
     "composer/installers": "^2.3",
     "koodimonni-language/core-pt_br": "*",
-    "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0.4",
     "roots/wordpress": "^6.6.1",
     "roots/wp-password-bcrypt": "^1.1",
     "symfony/http-foundation": "^7.1",
-    "symfony/yaml": "^7.1",
-    "vlucas/phpdotenv": "^5.6"
+    "symfony/yaml": "^7.1"
   },
   "require-dev": {
     "symfony/var-dumper": "^7.1"
@@ -48,8 +46,8 @@
   "config": {
     "allow-plugins": {
       "composer/installers": true,
-      "roots/wordpress-core-installer": true,
-      "koodimonni/composer-dropin-installer": true
+      "koodimonni/composer-dropin-installer": true,
+      "roots/wordpress-core-installer": true
     },
     "optimize-autoloader": true,
     "preferred-install": "dist",
@@ -73,5 +71,10 @@
       ]
     },
     "wordpress-install-dir": "public/wp"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "if [ ! -f .env ]; then cp .env.example .env; fi"
+    ]
   }
 }

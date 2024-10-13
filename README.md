@@ -1,2 +1,2 @@
-# WPH - WordPress Headless Skeleton
+# WPHM - WordPress Headless Manager
 Project in development.
