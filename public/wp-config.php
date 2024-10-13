@@ -5,7 +5,7 @@ require_once dirname( __DIR__ ) . '/vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 
 $env = getenv('WP_ENV') ?: 'local';
-$config_location = __DIR__ . "/config/{$env}.yaml";
+$config_location = dirname(__DIR__) . "/config/{$env}.yaml";
 
 if (!file_exists($config_location)) {
 	die("Config file for environment '$env' not found.");
