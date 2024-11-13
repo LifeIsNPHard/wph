@@ -154,10 +154,10 @@
         },
         {
             "name": "koodimonni-language/core-pt_br",
-            "version": "6.6.2",
+            "version": "6.7",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/6.6.2/pt_BR.zip"
+                "url": "https://downloads.wordpress.org/translation/core/6.7/pt_BR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1023,12 +1023,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
